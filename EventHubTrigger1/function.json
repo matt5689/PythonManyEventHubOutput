@@ -1,0 +1,22 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "events",
+      "direction": "in",
+      "eventHubName": "pythonfa5601eh2",
+      "connection": "aaaeventhub2_RootManageSharedAccessKey_EVENTHUB",
+      "cardinality": "many",
+      "consumerGroup": "$Default",
+      "dataType": "binary"
+    },
+    {
+      "type": "eventHub",
+      "direction": "out",
+      "name": "$return",
+      "connection": "aaaeventhub2_RootManageSharedAccessKey_EVENTHUB",
+      "eventHubName": "pythonfa5601eh2"
+    }
+  ]
+}
